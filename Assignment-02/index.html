@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Mirreh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="triple-dot-nav">
+        <div class="logo">Mirreh</div>
+        <div class="triple-dot-menu">
+            <div class="triple-dot-icon" onclick="toggleMenu ()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/images/mirreh-profile-pic.jpg" alt="Wais Mirreh Profile Picture">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Wais Mirreh</h1>
+            <p class="section_text_p2">Coding Enthusiast and Full-Stack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-colour-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+                <button class="btn btn-colour-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/wais-mirreh-aa6466288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'">
+                <img src="./assets/github.png" alt="Github" class="icon" onclick="location.href='https://github.com/BeegBoiWebDev'">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
